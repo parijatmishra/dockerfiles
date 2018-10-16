@@ -1,0 +1,2 @@
+#!/bin/bash
+exec docker run -v `pwd`:`pwd` -w `pwd` --rm -it --name npmjs-cfn-lint-$$ npmjs-cfn-lint:carbon-alpine $@
